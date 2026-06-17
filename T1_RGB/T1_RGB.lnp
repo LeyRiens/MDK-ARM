@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"t1_rgb\startup_stm32f103xb.o"
+"t1_rgb\main.o"
+"t1_rgb\gpio.o"
+"t1_rgb\tim.o"
+"t1_rgb\stm32f1xx_it.o"
+"t1_rgb\stm32f1xx_hal_msp.o"
+"t1_rgb\stm32f1xx_hal_gpio_ex.o"
+"t1_rgb\stm32f1xx_hal_tim.o"
+"t1_rgb\stm32f1xx_hal_tim_ex.o"
+"t1_rgb\stm32f1xx_hal.o"
+"t1_rgb\stm32f1xx_hal_rcc.o"
+"t1_rgb\stm32f1xx_hal_rcc_ex.o"
+"t1_rgb\stm32f1xx_hal_gpio.o"
+"t1_rgb\stm32f1xx_hal_dma.o"
+"t1_rgb\stm32f1xx_hal_cortex.o"
+"t1_rgb\stm32f1xx_hal_pwr.o"
+"t1_rgb\stm32f1xx_hal_flash.o"
+"t1_rgb\stm32f1xx_hal_flash_ex.o"
+"t1_rgb\stm32f1xx_hal_exti.o"
+"t1_rgb\system_stm32f1xx.o"
+--strict --scatter "T1_RGB\T1_RGB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "T1_RGB.map" -o T1_RGB\T1_RGB.axf
